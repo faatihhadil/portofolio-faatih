@@ -79,17 +79,18 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040a1400;
+  background: #1404045a;
   overflow-y: auto;
 }
 .header.sticky{
-  background-color: #040b14;
+  background-color: #140404;
 }
 
 .header .profile img {
   margin: 15px auto;
   display: block;
   width: 120px;
+  border : 3px solid rgba(224, 65, 65, 0.315);
 }
 
 .header .profile h1 {
@@ -200,6 +201,10 @@ h6 {
   color: #fff;
 }
 
+.nav-menu a:hover{
+  filter: drop-shadow(0 0 10px #ffffffaa);
+}
+
 .nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
@@ -277,7 +282,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: rgba(5, 13, 24, 0.438);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -510,7 +515,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #971f1f;
   position: relative;
 }
 
@@ -526,7 +531,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: #f9e4e4;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -554,7 +559,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid #971f1f;
 }
 
 /*--------------------------------------------------------------
@@ -678,11 +683,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid #dd1414;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: #dd1414;
 }
 
 .portfolio-details .portfolio-info {
@@ -1135,4 +1140,47 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
+}
+
+.cv{
+  background-color: transparent;
+  border-style: none;
+  padding: .7em 1em .7em;
+  border-radius: 5px 30px 5px 30px;
+  color: red;
+  transition: all ease 0.5s;
+  border : 1px solid rgb(214, 0, 0);
+  font-family: "Raleway", sans-serif;
+  margin-top: 20px;
+}
+
+.cv:hover{
+  background-color: rgb(255, 0, 0);
+  color: white;
+  border : 1px solid rgb(214, 0, 0);
+  filter: drop-shadow(0 0 1em #ffb5b5);
+
+}
+
+.button{
+  background-color: red;
+  border-style: none;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  border-radius: 10px 30px 10px 30px;
+  padding: 10px 20px 10px ;
+  border: 1px solid red;
+  transition: all ease-in .2s;
+  margin-top: 40px;
+}
+
+.button:hover{
+  background-color: transparent;
+  color: red;
+  border-radius: 10px;
+}
+
+.io{
+  border: 2px solid rgb(209, 0, 0);
+  border-radius: 10px;
 }
